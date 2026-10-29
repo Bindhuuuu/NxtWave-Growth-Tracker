@@ -13,11 +13,13 @@ import { ReferralTracker } from './components/referrals/ReferralTracker';
 import { ChannelAnalytics } from './components/analytics/ChannelAnalytics';
 import { BudgetTracker } from './components/budget/BudgetTracker';
 import { AIGrowthInsights } from './components/insights/AIGrowthInsights';
+import { StrategicRationaleModal } from './components/layout/StrategicRationaleModal';
 
 const MainLayout: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>('overview');
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isRationaleOpen, setIsRationaleOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col text-slate-800 antialiased selection:bg-nxtwave-500 selection:text-white">
@@ -27,6 +29,7 @@ const MainLayout: React.FC = () => {
       {/* 2. Top Application Navbar */}
       <Navbar 
         onToggleMobileSidebar={() => setIsMobileSidebarOpen(prev => !prev)} 
+        onOpenRationale={() => setIsRationaleOpen(true)}
       />
 
       {/* 3. Main Body: Sidebar + Dynamic Content View */}
@@ -92,6 +95,12 @@ const MainLayout: React.FC = () => {
       <AddRegistrationModal
         isOpen={isAddModalOpen}
         onClose={() => setIsAddModalOpen(false)}
+      />
+
+      {/* Strategic Rationale & Philosophy Modal */}
+      <StrategicRationaleModal
+        isOpen={isRationaleOpen}
+        onClose={() => setIsRationaleOpen(false)}
       />
 
       {/* Global Notification Toast */}

@@ -16,6 +16,22 @@ A modern, responsive, and functional Growth Intelligence Dashboard engineered to
 
 ---
 
+## 💡 Strategic Decision: Why More Than a Landing Page?
+
+> *"AI suggested building a simple landing page and using multiple marketing channels to promote the workshop. However, I decided not to limit my solution to a landing page because it would not help me understand which channels were actually generating registrations.*
+>
+> *Instead, I built a Workshop Growth Tracker with registration analytics, referral tracking, budget monitoring, and growth insights. I also avoided spending the entire budget on paid advertisements without first checking their effectiveness.*
+>
+> *My reason was simple: with a target of 500 registrations, a seven-day timeline, and a budget of ₹2,000, I wanted a solution that could measure results and help make better decisions. I used AI to speed up development, but I made the final decisions based on the campaign's goals and constraints."*
+
+### The 4 Growth Engineering Pillars
+1. **Attribution over Assumptions**: A static landing page is a black box. Without tracking which specific ambassador (`CAMP101`–`CAMP105`) or community generated the student, a growth intern cannot double down on what works.
+2. **Strict Unit Economics (₹4 allowable CAC)**: With ₹2,000 to acquire 500 students, the target blended CAC is ₹4/student. Burning ₹2,000 blindly on Instagram ads without testing would risk immediate budget failure. Instead, we phased ₹350 into creative micro-tests and leveraged low-cost campus ambassador incentives (₹500) and contingency buffers (₹400).
+3. **Daily Velocity Steering**: In a 7-day sprint, waiting until Day 7 to review numbers is fatal. Real-time velocity tracking (71.0 regs/day pace on Day 4) enables timely pivots.
+4. **AI-Accelerated, Human-Steered**: AI was used to accelerate development and component creation, while human strategic judgment steered constraint modeling, unit economics, and campaign strategy.
+
+---
+
 ## 🚀 Key Features Implemented
 
 ### 1. 📊 Executive Overview Dashboard

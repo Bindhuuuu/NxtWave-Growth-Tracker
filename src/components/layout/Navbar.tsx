@@ -1,13 +1,13 @@
-import React from 'react';
-import { Menu, Calendar, Sparkles, TrendingUp, Wallet } from 'lucide-react';
+import { Menu, Calendar, TrendingUp, Wallet, Lightbulb } from 'lucide-react';
 import { useCampaign } from '../../context/CampaignContext';
 import { formatINR, formatPercent } from '../../utils/formatters';
 
 interface NavbarProps {
   onToggleMobileSidebar: () => void;
+  onOpenRationale: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onToggleMobileSidebar }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onToggleMobileSidebar, onOpenRationale }) => {
   const { activeDay, setActiveDay, metrics } = useCampaign();
 
   return (
@@ -95,12 +95,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onToggleMobileSidebar }) => {
             </div>
           </div>
 
-          {/* AI Growth Engine Indicator */}
-          <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-purple-50 text-purple-700 border border-purple-200 text-xs font-semibold">
-            <Sparkles className="w-3.5 h-3.5 text-purple-600 animate-pulse" />
-            <span className="hidden sm:inline">Engine:</span>
-            <span className="font-bold">Active</span>
-          </div>
+          {/* Strategic Rationale Button */}
+          <button
+            onClick={onOpenRationale}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-xs font-bold transition cursor-pointer shadow-sm"
+            title="Read Growth Intern Strategic Rationale & Philosophy"
+          >
+            <Lightbulb className="w-3.5 h-3.5 text-amber-600" />
+            <span className="hidden sm:inline">Strategy</span> Rationale
+          </button>
         </div>
       </div>
     </header>
