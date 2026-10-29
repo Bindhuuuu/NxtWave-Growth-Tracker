@@ -3,6 +3,9 @@
 
 A modern, responsive, and functional Growth Intelligence Dashboard engineered to help a growth intern plan marketing campaigns, track simulated registrations, analyze ambassador referral performance, monitor a ₹2,000 budget, and make data-driven decisions.
 
+🌐 **Live Demo URL:** [https://nxtwave-growth-tracker-99fxwr60t-bindhuuuu.vercel.app/](https://nxtwave-growth-tracker-99fxwr60t-bindhuuuu.vercel.app/)  
+📂 **GitHub Repository:** [https://github.com/Bindhuuuu/NxtWave-Growth-Tracker](https://github.com/Bindhuuuu/NxtWave-Growth-Tracker)
+
 ---
 
 ## 📌 Campaign Overview & Business Challenge
